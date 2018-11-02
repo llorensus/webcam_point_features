@@ -19,7 +19,8 @@ kp = orb.detect(img,None)
 # compute the descriptors with ORB
 kp, des = orb.compute(img, kp)
 
-# draw only keypoints location,not size and orientation
+%draw only keypoints location,not size and orientation
 img2 = cv2.drawKeypoints(img,kp,color=(0,255,0), flags=0)
 plt.imshow(img2),plt.show()
-
+ https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_orb/py_orb.html
+ A comparative analysis of SIFT, SURF, KAZE, AKAZE, ORB, and BRISK, DOI: 10.1109/ICOMET.2018.8346440 
